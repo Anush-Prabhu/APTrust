@@ -1,0 +1,73 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "aptrust": "https://aptrust.org/vocab#"
+  },
+  "@type": "Organization",
+  "@id": "https://jhu.edu/",
+  "aptrust:aptrustVersion": "0.1",
+  "name": "Johns Hopkins University",
+  "url": "https://www.jhu.edu/",
+  "aptrust:sameAsDomain": [
+    "https://www.jh.edu/",
+    "https://www.johnshopkins.edu/",
+    "https://www.sais-jhu.edu/",
+    "https://www.jhsph.edu/",
+    "https://www.jhmi.edu/"
+  ],
+  "aptrust:sameAsSocialProfile": [
+    "https://x.com/JohnsHopkins",
+    "https://www.facebook.com/johnshopkinsuniversity",
+    "https://www.linkedin.com/school/johns-hopkins-university/",
+    "https://www.youtube.com/johnshopkins",
+    "https://www.instagram.com/johnshopkinsu"
+  ],
+  "aptrust:sameAsAdditionalProfile": [
+    "https://johnshopkins.employment.ngwebsolutions.com/"
+  ],
+  "identifier": [
+    { "@type": "PropertyValue", "propertyID": "aptrust:domain", "value": "jhu.edu" },
+    { "@type": "PropertyValue", "propertyID": "aptrust:domain", "value": "jh.edu" },
+    { "@type": "PropertyValue", "propertyID": "aptrust:domain", "value": "johnshopkins.edu" }
+  ],
+  "aptrust:trustBoundary": {
+    "primaryDomain": "jhu.edu",
+    "additionalDomains": [
+      "jh.edu",
+      "johnshopkins.edu",
+      "sais-jhu.edu",
+      "jhsph.edu",
+      "jhmi.edu"
+    ]
+  },
+  "aptrust:trustRule": [
+    { "type": "domain", "match": "exact-or-subdomain" },
+    { "type": "socialProfile", "match": "exact-url" },
+    { "type": "additionalProfile", "match": "exact-url" }
+  ],
+  "aptrust:exclusion": [
+    { "domain": "deprecated.jhu.edu", "reason": "Decommissioned subdomain" }
+  ],
+  "aptrust:officialMail": {
+    "provider": "Microsoft Outlook",
+    "webUrl": "https://outlook.cloud.microsoft/mail/?realm=jh.edu",
+    "host": "outlook.cloud.microsoft",
+    "note": "JHU hosts webmail on Microsoft's shared Outlook tenant. The ?realm=jh.edu query scopes it to JHU."
+  },
+  "aptrust:reportContact": {
+    "team": "JHU Information Security Institute",
+    "email": "security@jhu.edu",
+    "url": "https://jhu.edu/security/report",
+    "note": "Mockup contact for the POC; not a real endpoint."
+  },
+  "aptrust:verificationMethod": {
+    "hashAlgorithm": "SHA-256",
+    "hashVerificationEnabled": false,
+    "nameserverMetadata": {
+      "note": "Metadata only. NOT used as active trust logic in v1.",
+      "nameservers": ["ns1.johnshopkins.edu", "ns2.johnshopkins.edu"]
+    }
+  },
+  "aptrust:manifestLocation": "http://localhost:8787/manifest/jhu.edu",
+  "aptrust:lastUpdated": "2026-04-20T00:00:00Z"
+}

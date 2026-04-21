@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>APTrust</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title">APTrust<span class="tag">POC</span></div>
+      <label class="switch" title="Toggle Protect Mode">
+        <input type="checkbox" id="protectMode" />
+        <span class="slider"></span>
+        <span class="switch-label">Protect Mode</span>
+      </label>
+    </header>
+
+    <section id="selectedPanel" class="panel">
+      <div class="panel-title">Selected boundary</div>
+      <div id="selectedBody" class="panel-body muted">None selected.</div>
+      <button id="clearBtn" class="ghost hidden">Clear</button>
+    </section>
+
+    <section class="panel">
+      <div class="panel-title">Find a boundary</div>
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="Try: jhu, johnshopkins, jhu.edu"
+        autocomplete="off"
+      />
+      <ul id="searchResults" class="results"></ul>
+    </section>
+
+    <section class="panel">
+      <div class="panel-title">Current tab</div>
+      <div id="tabUrl" class="mono small muted">—</div>
+      <div id="tabVerdict" class="verdict">—</div>
+    </section>
+
+    <footer>
+      <div id="status" class="status"></div>
+      <div class="hint">Server: <code>http://localhost:8787</code></div>
+    </footer>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "_comment": "Local index of canonical trust boundaries. One entry per canonical domain.",
+  "entries": [
+    {
+      "canonicalDomain": "jhu.edu",
+      "displayName": "Johns Hopkins University",
+      "aliases": [
+        "jhu",
+        "jhu.edu",
+        "jh.edu",
+        "johnshopkins",
+        "johnshopkins.edu",
+        "johns hopkins",
+        "johns hopkins university"
+      ],
+      "manifestUrl": "http://localhost:8787/manifest/jhu.edu",
+      "_manifestUrlTodo": "TODO: Later, replace this with a GitHub raw URL (e.g. https://raw.githubusercontent.com/<org>/aptrust-records/main/domains/jhu.edu/manifest.jsonld) OR keep /manifest/:domain as a 302 redirect to that raw URL. See server/index.js GET /manifest/:domain.",
+      "manifestHash": "sha256-pending",
+      "_manifestHashTodo": "TODO: Replace with real sha256-<hex> once the manifest is frozen. Extension has SHA-256 scaffolding; turn on by setting hashVerificationEnabled=true.",
+      "version": "0.1.0",
+      "hashVerificationEnabled": false
+    }
+  ]
+}

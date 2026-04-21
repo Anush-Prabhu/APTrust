@@ -1,0 +1,39 @@
+# Node / npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Environment / secrets
+.env
+.env.*
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Cursor / AI agent scratch state
+.cursor/
+.cursorignore
+.cursorrules
+terminals/
+agent-transcripts/
+.codex/
+debug-*.log
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build / dist
+dist/
+build/
+coverage/
+
+# Temp
+*.tmp
+*.bak
